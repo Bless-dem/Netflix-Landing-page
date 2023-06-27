@@ -1,18 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Netflix Clone</title>
-    <link rel="stylesheet" href="/style/style.css">
-</head>
-<body>
-    <div class="netflix">
-        <img src="/img/movie collection.jpg" alt="">
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- first section -->
+      <div class="netflix">
+        <header>
+          <h1 class="logo">
+            <img src="./img/netttt-removebg-preview.png " alt="" />
+          </h1>
+          <button type="button">Sign in</button>
+        </header>
+
+        <!-- second section -->
+        <div class="form-section">
+          <hgroup>
+            <h2>Unlimited movies, TV shows, and more</h2>
+            <h3>Watch anywhere. Cancel anytime</h3>
+          </hgroup>
+
+          <span
+            >Ready to watch? Enter your email to create or restart your
+            membership.</span
+          >
+          <form>
+            <div class="email">
+              <input type="email" placeholder="Email address" />
+
+            <button type="submit">Get Started ></button>
+            </div>
+
+            <h3 class="errorMsg">Email is required!</h3>
+            
+          </form>
+
+        </div>
+      </div>
+      <hr style="height:8px; background:grey; border:none">
+      
+
+      <!--FIRST SECTION-->
+      <div class="first-container">
+    <div class="first">
+            <hgroup>
+            <h1>Enjoy on your TV</h1>
+            <h3>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, <br>Blu-ray players, and more.</h3>
+            </hgroup>
+    </div>
+            <div class="video-container">
+            <video autoplay="" loop="" muted="" 
+            class="feature-bg-video">
+                <source src="/videos/netflixvid.mp4"></source>
+            </video>
+            </div>
+        </div>
+
+      <hr style="height:8px; background:grey; border:none">
+
+      <!--SECOND SECTION-->
+
+      <div class="mobile-section">
+        <div class="mobilevideo-section">
+        <video autoplay=" "loop="" muted="" ><source src="videos/Stranger Things.mp4"></video>
+        </div>
+
+        <div class="mobile-sec">
+            <hgroup>
+                <h2>Download your shows to watch offline</h2>
+                <p>Save your favorites easily and always have <br> something to watch.</p>
+            </hgroup>
+        </div>
+    </div>
+ <hr style="height:8px; background:grey; border:none">    
+
+    <!--THIRD SECTION-->
+
+
+    <div class="laptop-sec">
+        <div class="laptop">
+            <hgroup>
+                <h1>Watch everywhere
+                </h1>
+
+                <h5>Stream unlimited movies and TV <br>shows on your phone, tablet, laptop, <br>and TV.</h5>
+            </hgroup>
+        </div>
+
+        <div class="laptop-vid">
+            <video autoplay="" loop="" muted=""><source src="videos/laptop1.mp4"></video>
+        </div>
+
     </div>
 
-    <div class="logo">
-        <h1>Netflix</h1>
+    <hr style="height:8px; background:grey; border:none">
+      
+
+    <!--FOURTH-SECTION-->
+    <div class="kids-page">
+        <div class="kids">
+            <img src="img/children.png" alt="">
+        </div>
+        <div class="children">
+            <hgroup>
+          <h1>Create profiles for kids</h1>  
+            <h4>Send kids on adventures with their favorite <br> characters in a space made just for them—free <br>with your membership. </h4>
+            </hgroup>
+        </div>
     </div>
-</body>
+
+        <hr style="height:8px; background:grey; border:none">
+
+    <!--FIFTH-SECTION-->
+
+    <div class="FAQ">
+        <img src="img/FAQ.png" alt="">
+    </div>
+
+
+      <div class="sign-up">
+        <div class="form">
+          
+          <div class="span">
+
+            <span
+            >Ready to watch? Enter your email to create or restart your
+            membership.</span
+          >
+  
+          </div>
+          <form>
+            
+              <input type="email" placeholder="Email address" />
+
+            <button type="submit">Get Started ></button>
+            
+          </form> 
+        </div>
+      </div>
+    
+    <hr style="height:8px; background:grey; border:none">
+<br>
+<footer class="Contact-page">
+<div id="footer">
+    <h1><a href="#">Questions? Contact Us</a></h1>
+      <div class="splitter">
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Investors Relation</a></li>
+          <li><a href="#">Privacy</a></li>
+          
+          <li><a href="#">Speed Test</a></li> 
+        <li><a href="#">Help Center</a></li>
+        </ul>
+        <br>
+        <ul>
+        <li><a href="#"> Jobs</a></li>
+        <li><a href="#">Cookie Preferences</a></li>
+        <li><a href="#"> Legal Notices</a></li>
+    
+        <li><a href="#"> Account</a></li>
+        <li><a href="#">Ways to Watch</a></li>
+        </ul>
+        <br>
+        <ul>
+        <li><a href="#">Corporate Information</a></li>
+        <li><a href="#">Only on Netflix</a></li>
+      <li><a href="#">Media Centre </a></li>
+        <li><a href="#"> Term of Use</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+
+
+    
+</div>
+
+<div class="lang">
+  
+  <select name="" id="">
+    <option value="English">English</option>
+  </select>
+  <i class="fa-solid fa-globe"></i> 
+
+
+  <p>Netflix Nigeria</p>
+
+
+</div>
+</footer>
+
+
+    </div>
+  </body>
 </html>
