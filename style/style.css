@@ -5,17 +5,13 @@
     list-style:none;
 }
 
-/* .body{ */
-    
-    /* background: black; */
-
-
+/* THIS COVERS THE ENTIRE ENVIRONMENT OF THE PROJECT */
 .container{
     background:black;
     overflow-x: hidden;
-    /* height: 600vh; */
+    
 }
-
+/* /THIS IS THE BACKGOUND COVER IMAGE */
 .netflix{
     display: flex;
    justify-content: center;
@@ -28,6 +24,8 @@
    zoom: 1.1;
    position: relative;
 }
+
+/* THIS IS ADDING LINEAR GRADIENT & OPACITY EFFECTS TO THE BACKGROUND COVER IMAGE */
 .netflix::after{
   content: "";
   position: absolute;
@@ -39,7 +37,7 @@
   opacity: 0.75;
   z-index: 0;
 }
-
+/* THIS HEADER CONTAINER THE NETFLIX LOGO AND SIGN IN BUTTON ADJUSTMENTS */
 header{
     display: flex;
     justify-content: space-between;
@@ -68,7 +66,7 @@ header button{
     cursor: pointer;
     border-radius: 6%;
 }
-
+/* THIS FORM SECTION COVERS ALL THE DETAILS FOR 1ST LOGIN INFORM. AND THE TEXT ON COVER IMAGE*/
 .form-section{
     z-index: 100;
     display: flex;
@@ -129,7 +127,6 @@ form-section form{
     font-size: 0.9em;
     color: #fff;
     font-family: sans-serif;
-    /* position: relative; */
     left: 0;
     margin-bottom: 20px 40px;
     display:block-flex;
@@ -159,7 +156,7 @@ form-section form{
     cursor:pointer;
     margin:3px;
 }
-
+/* THIS 3RD SECTION COVERS  THE 2ND PARAGRAGH OF THE  TV */
 .first-container{
     place-items:center;
     display:flex;
@@ -173,7 +170,7 @@ Font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-
 Font-size: 48px;
 Font-weight: 900;
 Line-height: normal;
-Font-color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);
 margin-top: 5em;
 margin-bottom:0.3em;
 display:flex;
@@ -192,23 +189,15 @@ display:flex;
 color:white;
 }
 
-.video-container video{
 
-    justify-content:center;
-    display:flex;
-    place-items: center;
-    height: 400px;
-
-
-}
-
+/* THIS 4TH SECTION COVERS  THE 3RD PARAGRAGH OF THE PHONE  */
 .mobile-section{
     place-items:center;
     display:flex;
     justify-content:space-around;
     flex-direction:row;
     z-index:1000;
-    /* padding: 17px 0px */
+    
 }
 
 .mobilevideo-section video{
@@ -224,8 +213,7 @@ color:white;
     Font-size: 48px;
     Font-weight: 900;
     Line-height: normal;
-    color:white;
-    Font-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     display:flex;
     margin-bottom:0.3em;
     
@@ -237,12 +225,12 @@ color:white;
     Font-size: 24px;
     Font-weight: 400;
     Line-height: normal;
-    Font-color: rgb(255, 255, 255);
-    color:#fff;
+    color: rgb(255, 255, 255);
     display: flex;
     margin-bottom: 1em;
 }
 
+/* THIS 5TH SECTION COVERS  THE 4TH PARAGRAGH OF THE LATPTOP  */
 .laptop-sec{
     place-items:center;
     display:flex;
@@ -264,8 +252,7 @@ Font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-
 Font-size: 48px;
 Font-weight: 900;
 Line-height: normal;
-Font-color: rgb(255, 255, 255);
-color: white;
+color: rgb(255, 255, 255);
 display: flex;
 margin-top: 5em;
 margin-bottom:0.3em;
@@ -276,12 +263,12 @@ Font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-
 Font-size: 24px;
 Font-weight: 400;
 Line-height: normal;
-Font color: rgb(255, 255, 255);
-color:white;
+color: rgb(255, 255, 255);
 display:flex;
 margin-bottom: 9em;
 }
 
+/* THIS 6TH SECTION COVERS  THE 5TH PARAGRAGH OF THE KIDS  */
 .kids-page{
     place-items:center;
     display:flex;
@@ -299,16 +286,13 @@ margin-bottom: 9em;
     height:400px;
 }
 
-
-
 .kids-page .children h1{
 
     Font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
     Font-size: 48px;
     Font-weight: 900;
     Line-height: normal;
-    Font-color: rgb(255, 255, 255);
-    color:white;
+    color: rgb(255, 255, 255);
     margin-top: 5em;
     margin-bottom:0.3em;
 
@@ -319,8 +303,8 @@ margin-bottom: 9em;
     Font-size: 24px;
     Font-weight: 400;
     Line-height: normal;
-    Font-color: rgb(255, 255, 255);
-    color: white;
+    color: rgb(255, 255, 255);
+    
     margin-bottom: 9em;
 }
 
@@ -387,7 +371,6 @@ DESIGN FOR 2ND PLACEHOLDER IN THE FAQ PAGE */
     color:#fff;
     border-color: green;
     border:2px solid green;
-
     margin-bottom: 4em;
 }
 
@@ -405,7 +388,6 @@ DESIGN FOR 2ND PLACEHOLDER IN THE FAQ PAGE */
     display:flex;
     gap: .4em;
     justify-content: center;
-    /* place-items: center; */
 }
 
 
@@ -465,7 +447,38 @@ select{
     padding-left: 10px 10px;
     margin:30px 0px;
 }
+/* THIS COVERS DIFFERENT SIZES DIMENSIONS OF THE PROJECT ON VARIOUS DEVICES */
+@media screen and (min-width: 768px) and (max-width: 1440px)
+{
+.laptop-sec{
+    place-items:center;
+    display:flex;
+    justify-content:space-around;
+    flex-direction: row;
+    z-index: 1000;
+}
+.kids-page{
+    place-items:center;
+    display:flex;
+    justify-content:space-around;
+    flex-direction: row;
+    z-index: 1000;
 
+}
+.mobile-section{
+    place-items:center;
+    display:flex;
+    justify-content:space-around;
+    flex-direction:row;
+    z-index:1000;
+}
+
+.FAQ{
+   place-items:center;
+    justify-content:center;
+    display:flex;
+}
+}
 
 
 
